@@ -37,6 +37,7 @@ class TextAdapter extends RecyclerView.Adapter<TextAdapter.ViewHolder> {
         }
         else{
             holder.text.setBackgroundColor(0xff00ff00);
+        }
     }
 
     @Override
