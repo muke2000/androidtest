@@ -32,9 +32,11 @@ class TextAdapter extends RecyclerView.Adapter<TextAdapter.ViewHolder> {
     public void onBindViewHolder(ViewHolder holder, int position) {
         Text texts = mText.get(position);
         holder.text.setText(texts.getContent());
-        if (getItemCount()%2==0){
+        if (（getItemCount()-position）%2==0){
             holder.text.setBackgroundColor(0xffff00ff);
         }
+        else{
+            holder.text.setBackgroundColor(0xff00ff00);
     }
 
     @Override
